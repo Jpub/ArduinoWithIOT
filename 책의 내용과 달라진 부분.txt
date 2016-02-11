@@ -1,0 +1,20 @@
+** 아래 내용은 아두이노 소프트웨어와 라이브러리의 업데이트에 따라 책의 내용과 달라진 부분들로 
+제공되는 소스 코드에는 이미 수정된 상태이다.
+
+* USB Host Shield
+스케치 8-1에서 아래 내용은
+HIDBoot<HID_PROTOCOL_MOUSE> HidMouse(&Usb);
+다음과 같이 수정하여야 정상적으로 컴파일 및 업로드가 가능하다.
+HIDBoot<USB_HID_PROTOCOL_MOUSE> HidMouse(&Usb);
+
+또한 스케치 8-2에서도 아래 내용은
+HIDBoot<HID_PROTOCOL_KEYBOARD> HidKeyboard(&Usb);
+다음과 같이 수정하여야 한다.
+HIDBoot<USB_HID_PROTOCOL_KEYBOARD> HidKeyboard(&Usb);
+
+* 마우스 & 키보드 라이브러리
+스케치 13-3에는 #include <Keyboard.h>가 추가되어야 한다.
+스케치 13-4에는 #include <Mouse.h>가 추가되어야 한다.
+스케치 14-1에는 #include <Keyboard.h>가 추가되어야 한다.
+스케치 14-2에는 #include <Keyboard.h>와 #include <Mouse.h>가 추가되어야 한다.
+스케치 14-3에는 #include <Keyboard.h>가 추가되어야 한다.

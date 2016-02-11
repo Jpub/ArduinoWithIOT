@@ -1,0 +1,73 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/relativeLayout">
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="LED 1 is on"
+            android:textOff="LED 1 is off"
+            android:id="@+id/toggleButton1" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="LED 2 is on"
+            android:textOff="LED 2 is off"
+            android:id="@+id/toggleButton2"
+            android:layout_below="@id/toggleButton1"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="LED 3 is on"
+            android:textOff="LED 3 is off"
+            android:id="@+id/toggleButton3"
+            android:layout_below="@id/toggleButton2"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="LED 4 is on"
+            android:textOff="LED 4 is off"
+            android:id="@+id/toggleButton4"
+            android:layout_below="@id/toggleButton3"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="LED 5 is on"
+            android:textOff="LED 5 is off"
+            android:id="@+id/toggleButton5"
+            android:layout_below="@id/toggleButton4"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="LED 6 is on"
+            android:textOff="LED 6 is off"
+            android:id="@+id/toggleButton6"
+            android:layout_below="@id/toggleButton5"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="LED 7 is on"
+            android:textOff="LED 7 is off"
+            android:id="@+id/toggleButton7"
+            android:layout_below="@id/toggleButton6"/>
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="LED 8 is on"
+            android:textOff="LED 8 is off"
+            android:id="@+id/toggleButton8"
+            android:layout_below="@id/toggleButton7"/>
+    </RelativeLayout>
+</RelativeLayout>
